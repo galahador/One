@@ -38,6 +38,17 @@ class DiceViewController: UIViewController, ARSCNViewDelegate {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         setupTouche(touches: touches, event: event)
     }
+    
+    fileprivate func moonSetup() {
+                let sphere = SCNSphere(radius: 0.2)
+                let material = SCNMaterial()
+                material.diffuse.contents = UIImage(named: "art.scnassets/moon.jpg")
+                sphere.materials = [material]
+                let node = SCNNode()
+                node.position = SCNVector3(x: 0, y: 0.1, z: -0.5)
+                node.geometry = sphere
+                sceneView.scene.rootNode.addChildNode(node)
+    }
 
     fileprivate func setupTouche(touches: Set<UITouch>, event: UIEvent?) {
         if let touch = touches.first {
