@@ -38,6 +38,9 @@
                                     <constraint firstAttribute="height" constant="55" id="ntT-YA-Fhn"/>
                                 </constraints>
                                 <state key="normal" title="Augmented reality"/>
+                                <connections>
+                                    <segue destination="QA5-xI-Rgz" kind="show" id="hLZ-ry-CvU"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ash-tW-93E">
                                 <rect key="frame" x="20" y="757" width="374" height="55"/>
@@ -88,6 +91,35 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="988" y="102"/>
+        </scene>
+        <!--Dice View Controller-->
+        <scene sceneID="70J-fP-uEq">
+            <objects>
+                <viewController id="QA5-xI-Rgz" customClass="DiceViewController" customModule="One" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1tp-55-Do4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5hS-zY-kZn">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                            </arscnView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="iwh-I4-5Zx" firstAttribute="trailing" secondItem="5hS-zY-kZn" secondAttribute="trailing" id="2ou-h7-EaX"/>
+                            <constraint firstItem="5hS-zY-kZn" firstAttribute="leading" secondItem="iwh-I4-5Zx" secondAttribute="leading" id="PcA-pC-MF4"/>
+                            <constraint firstItem="5hS-zY-kZn" firstAttribute="top" secondItem="iwh-I4-5Zx" secondAttribute="top" id="YxP-MN-rrV"/>
+                            <constraint firstItem="iwh-I4-5Zx" firstAttribute="bottom" secondItem="5hS-zY-kZn" secondAttribute="bottom" id="utP-f9-f2u"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="iwh-I4-5Zx"/>
+                    </view>
+                    <connections>
+                        <outlet property="sceneView" destination="5hS-zY-kZn" id="HCI-9C-dIM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xYE-qb-HTq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="987" y="777"/>
         </scene>
         <!--Camera View Controller-->
         <scene sceneID="4sq-Vd-a6M">
