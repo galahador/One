@@ -37,7 +37,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="ntT-YA-Fhn"/>
                                 </constraints>
-                                <state key="normal" title="Agmented "/>
+                                <state key="normal" title="Augmented reality"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ash-tW-93E">
                                 <rect key="frame" x="20" y="757" width="374" height="55"/>
@@ -45,7 +45,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="GeX-dz-yEf"/>
                                 </constraints>
-                                <state key="normal" title="Something"/>
+                                <state key="normal" title="Crypto price status"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TEXT " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="scr-Oa-b4J">
                                 <rect key="frame" x="20" y="158" width="374" height="90"/>
@@ -134,6 +134,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="54Z-wQ-PcU">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

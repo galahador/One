@@ -16,6 +16,7 @@
 		A5F078ED215CE50D00D41C11 /* MLImageRecognition.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = A5F078EC215CE50D00D41C11 /* MLImageRecognition.xcdatamodel */; };
 		A5F078F0215CE54100D41C11 /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = A5F078EF215CE54100D41C11 /* Inceptionv3.mlmodel */; };
 		A5F078F3215CE56E00D41C11 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F078F2215CE56E00D41C11 /* CameraViewController.swift */; };
+		A5F078F5215CF6CB00D41C11 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F078F4215CF6CB00D41C11 /* RoundedButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		A5F078EC215CE50D00D41C11 /* MLImageRecognition.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MLImageRecognition.xcdatamodel; sourceTree = "<group>"; };
 		A5F078EF215CE54100D41C11 /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
 		A5F078F2215CE56E00D41C11 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		A5F078F4215CF6CB00D41C11 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 		A5F078E3215CE17000D41C11 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A5F078F4215CF6CB00D41C11 /* RoundedButton.swift */,
 				A5F078EE215CE52800D41C11 /* MLModel */,
 			);
 			path = Model;
@@ -243,6 +246,7 @@
 				A5F078F0215CE54100D41C11 /* Inceptionv3.mlmodel in Sources */,
 				A5F078C4215CE15D00D41C11 /* AppDelegate.swift in Sources */,
 				A5F078E7215CE19F00D41C11 /* MainViewController.swift in Sources */,
+				A5F078F5215CF6CB00D41C11 /* RoundedButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
