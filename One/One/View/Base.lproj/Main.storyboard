@@ -48,7 +48,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="GeX-dz-yEf"/>
                                 </constraints>
-                                <state key="normal" title="Crypto price status"/>
+                                <state key="normal" title="need more info"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TEXT " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="scr-Oa-b4J">
                                 <rect key="frame" x="20" y="158" width="374" height="90"/>

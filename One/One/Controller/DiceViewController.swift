@@ -11,11 +11,11 @@ import SceneKit
 import ARKit
 
 class DiceViewController: UIViewController, ARSCNViewDelegate {
+    
     @IBOutlet weak var sceneView: ARSCNView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         sceneView.delegate = self
 
         self.sceneView.debugOptions = [ARSCNDebugOptions.showFeaturePoints]
@@ -36,6 +36,10 @@ class DiceViewController: UIViewController, ARSCNViewDelegate {
     }
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        setupTouche(touches: touches, event: event)
+    }
+
+    fileprivate func setupTouche(touches: Set<UITouch>, event: UIEvent?) {
         if let touch = touches.first {
             let touchLocation = touch.location(in: sceneView)
             let results = sceneView.hitTest(touchLocation, types: .existingPlaneUsingExtent)
@@ -59,6 +63,10 @@ class DiceViewController: UIViewController, ARSCNViewDelegate {
 
     // MARK: - ARSCNViewDelegate
     func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {
+        setupAnchor(anchor: anchor, node: node)
+    }
+
+    fileprivate func setupAnchor(anchor: ARAnchor, node: SCNNode) {
         if anchor is ARPlaneAnchor {
             let planeAnchor = anchor as! ARPlaneAnchor
             let plane = SCNPlane(width: CGFloat(planeAnchor.extent.x), height: CGFloat(planeAnchor.extent.z))
