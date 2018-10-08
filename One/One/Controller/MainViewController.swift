@@ -11,12 +11,14 @@ import UIKit
 class MainViewController: UIViewController {
     @IBOutlet weak var coreMLButton: UIButton!
     @IBOutlet weak var augmentedReality: UIButton!
-    @IBOutlet weak var something: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupRoundedButtons()
+    }
+    
+    fileprivate func setupRoundedButtons() {
         RoundedButton().buttonSetup(button: coreMLButton)
         RoundedButton().buttonSetup(button: augmentedReality)
-        RoundedButton().buttonSetup(button: something)
     }
 }
