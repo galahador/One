@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroud_wallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="6yY-vj-3bi">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CaM-lv-cag">
                                 <rect key="frame" x="20" y="667" width="374" height="55"/>
@@ -51,7 +51,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ClL-OG-K4d" secondAttribute="trailing" constant="20" id="eR2-Xf-081"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ClL-OG-K4d" secondAttribute="bottom" constant="65" id="grc-cT-Sg8"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6yY-vj-3bi" secondAttribute="bottom" id="oaN-kt-INj"/>
-                            <constraint firstItem="6yY-vj-3bi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="u8E-8n-Xhe"/>
+                            <constraint firstItem="6yY-vj-3bi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-88" id="u8E-8n-Xhe"/>
                             <constraint firstItem="6yY-vj-3bi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="uGH-fZ-HeA"/>
                             <constraint firstItem="ClL-OG-K4d" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="w6Y-bW-YsX"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CaM-lv-cag" secondAttribute="trailing" constant="20" id="zFH-Er-2q8"/>
@@ -66,7 +66,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="988" y="102"/>
+            <point key="canvasLocation" x="986.95652173913049" y="101.78571428571428"/>
         </scene>
         <!--Dice View Controller-->
         <scene sceneID="70J-fP-uEq">
@@ -126,16 +126,16 @@
             </objects>
             <point key="canvasLocation" x="1732" y="1523"/>
         </scene>
-        <!--View Controller-->
+        <!--Augmented Reality View Controller-->
         <scene sceneID="XJr-Ly-rXl">
             <objects>
-                <viewController id="scq-ca-cn9" sceneMemberID="viewController">
+                <viewController id="scq-ca-cn9" customClass="AugmentedRealityViewController" customModule="One" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="okp-4u-Ve3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroud_wallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="zqX-Qx-1cn">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_wallpaper2" translatesAutoresizingMaskIntoConstraints="NO" id="zqX-Qx-1cn">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mim-DF-6GE">
                                 <rect key="frame" x="20" y="697" width="374" height="55"/>
@@ -145,7 +145,7 @@
                                 </constraints>
                                 <state key="normal" title="Dice "/>
                                 <connections>
-                                    <segue destination="QA5-xI-Rgz" kind="show" id="d0O-kb-G2D"/>
+                                    <segue destination="QA5-xI-Rgz" kind="show" id="CK3-hF-Bs8"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VcT-ff-MGc">
@@ -156,7 +156,7 @@
                                 </constraints>
                                 <state key="normal" title="Moon"/>
                                 <connections>
-                                    <segue destination="O7W-P3-b3F" kind="show" id="ILT-5r-ecD"/>
+                                    <segue destination="O7W-P3-b3F" kind="show" id="v0F-nE-XZg"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -165,7 +165,7 @@
                             <constraint firstItem="by9-Ib-Sfl" firstAttribute="trailing" secondItem="mim-DF-6GE" secondAttribute="trailing" constant="20" id="22i-EM-VbV"/>
                             <constraint firstItem="by9-Ib-Sfl" firstAttribute="trailing" secondItem="zqX-Qx-1cn" secondAttribute="trailing" id="8So-QM-zYb"/>
                             <constraint firstItem="zqX-Qx-1cn" firstAttribute="leading" secondItem="by9-Ib-Sfl" secondAttribute="leading" id="FGA-Dl-iuZ"/>
-                            <constraint firstItem="zqX-Qx-1cn" firstAttribute="top" secondItem="by9-Ib-Sfl" secondAttribute="top" id="HPY-OD-CwH"/>
+                            <constraint firstItem="zqX-Qx-1cn" firstAttribute="top" secondItem="by9-Ib-Sfl" secondAttribute="top" constant="-88" id="HPY-OD-CwH"/>
                             <constraint firstItem="mim-DF-6GE" firstAttribute="leading" secondItem="by9-Ib-Sfl" secondAttribute="leading" constant="20" id="JMo-wr-J8O"/>
                             <constraint firstItem="VcT-ff-MGc" firstAttribute="top" secondItem="mim-DF-6GE" secondAttribute="bottom" constant="15" id="QAO-6Y-VvW"/>
                             <constraint firstItem="VcT-ff-MGc" firstAttribute="leading" secondItem="by9-Ib-Sfl" secondAttribute="leading" constant="20" id="clI-Qc-V47"/>
@@ -175,10 +175,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="by9-Ib-Sfl"/>
                     </view>
+                    <connections>
+                        <outlet property="diceButton" destination="mim-DF-6GE" id="8bc-Yf-38f"/>
+                        <outlet property="moonButton" destination="VcT-ff-MGc" id="qZz-em-jTl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2eM-Qu-0dk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="987" y="846"/>
+            <point key="canvasLocation" x="986.95652173913049" y="845.75892857142856"/>
         </scene>
         <!--Camera View Controller-->
         <scene sceneID="4sq-Vd-a6M">
@@ -238,5 +242,6 @@
     </scenes>
     <resources>
         <image name="backgroud_wallpaper" width="564" height="1002"/>
+        <image name="background_wallpaper2" width="564" height="1002"/>
     </resources>
 </document>

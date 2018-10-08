@@ -11,12 +11,20 @@ import UIKit
 class MainViewController: UIViewController {
     @IBOutlet weak var coreMLButton: UIButton!
     @IBOutlet weak var augmentedReality: UIButton!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setupRoundedButtons()
+        setupNavigationToBeTransparent()
     }
-    
+
+    fileprivate func setupNavigationToBeTransparent() {
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.navigationBar.isTranslucent = true
+        self.navigationController?.navigationBar.tintColor = .red
+    }
+
     fileprivate func setupRoundedButtons() {
         RoundedButton().buttonSetup(button: coreMLButton)
         RoundedButton().buttonSetup(button: augmentedReality)

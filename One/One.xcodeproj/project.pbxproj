@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A507B628216B60EC00918347 /* MoonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A507B627216B60EC00918347 /* MoonViewController.swift */; };
+		A507B62F216B8C9F00918347 /* AugmentedRealityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A507B62E216B8C9F00918347 /* AugmentedRealityViewController.swift */; };
 		A5F078C4215CE15D00D41C11 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F078C3215CE15D00D41C11 /* AppDelegate.swift */; };
 		A5F078C9215CE15D00D41C11 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5F078C7215CE15D00D41C11 /* Main.storyboard */; };
 		A5F078CE215CE15E00D41C11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5F078CC215CE15E00D41C11 /* LaunchScreen.storyboard */; };
@@ -40,6 +41,7 @@
 
 /* Begin PBXFileReference section */
 		A507B627216B60EC00918347 /* MoonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoonViewController.swift; sourceTree = "<group>"; };
+		A507B62E216B8C9F00918347 /* AugmentedRealityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AugmentedRealityViewController.swift; sourceTree = "<group>"; };
 		A5F078C0215CE15D00D41C11 /* One.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = One.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5F078C3215CE15D00D41C11 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5F078C8215CE15D00D41C11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -82,6 +84,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A507B62B216B6FA000918347 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		A5F078B7215CE15D00D41C11 = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +116,7 @@
 				A5F078E5215CE17900D41C11 /* Controller */,
 				A5F078E4215CE17400D41C11 /* View */,
 				A5F078E3215CE17000D41C11 /* Model */,
+				A507B62B216B6FA000918347 /* Helper */,
 				A5F078CF215CE15E00D41C11 /* Info.plist */,
 				A5F078F8215D00F300D41C11 /* art.scnassets */,
 				A5F078EA215CE34400D41C11 /* Assets.xcassets */,
@@ -137,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				A5F078E6215CE19F00D41C11 /* MainViewController.swift */,
+				A507B62E216B8C9F00918347 /* AugmentedRealityViewController.swift */,
 				A5F078F2215CE56E00D41C11 /* CameraViewController.swift */,
 				A5F078F6215CFF2C00D41C11 /* DiceViewController.swift */,
 				A507B627216B60EC00918347 /* MoonViewController.swift */,
@@ -288,6 +299,7 @@
 				A5F078F3215CE56E00D41C11 /* CameraViewController.swift in Sources */,
 				A5F078F0215CE54100D41C11 /* Inceptionv3.mlmodel in Sources */,
 				A507B628216B60EC00918347 /* MoonViewController.swift in Sources */,
+				A507B62F216B8C9F00918347 /* AugmentedRealityViewController.swift in Sources */,
 				A5F078F7215CFF2C00D41C11 /* DiceViewController.swift in Sources */,
 				A5F078C4215CE15D00D41C11 /* AppDelegate.swift in Sources */,
 				A5F078E7215CE19F00D41C11 /* MainViewController.swift in Sources */,
