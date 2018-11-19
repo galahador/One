@@ -16,10 +16,7 @@ class DiceViewController: UIViewController, ARSCNViewDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        sceneView.delegate = self
-
-        self.sceneView.debugOptions = [ARSCNDebugOptions.showFeaturePoints]
-        sceneView.autoenablesDefaultLighting = true
+        setupSceneView()
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -37,6 +34,13 @@ class DiceViewController: UIViewController, ARSCNViewDelegate {
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         setupTouche(touches: touches, event: event)
+    }
+
+    fileprivate func setupSceneView() {
+        sceneView.delegate = self
+        self.sceneView.debugOptions = [ARSCNDebugOptions.showFeaturePoints]
+        sceneView.autoenablesDefaultLighting = true
+
     }
 
     fileprivate func setupTouche(touches: Set<UITouch>, event: UIEvent?) {

@@ -26,7 +26,7 @@ class MainViewController: UIViewController {
     }
 
     fileprivate func setupRoundedButtons() {
-        RoundedButton().buttonSetup(button: coreMLButton)
-        RoundedButton().buttonSetup(button: augmentedReality)
+        RoundedButton().buttonCornerRadiusSetup(button: coreMLButton)
+        RoundedButton().buttonCornerRadiusSetup(button: augmentedReality)
     }
 }

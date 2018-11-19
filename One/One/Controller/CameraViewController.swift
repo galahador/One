@@ -13,8 +13,8 @@ import Vision
 
 class CameraViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
-    let imagePicker = UIImagePickerController()
     @IBOutlet weak var imageView: UIImageView!
+    let imagePicker = UIImagePickerController()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +28,7 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
     }
 
     func imagePickerController(_ picker: UIImagePickerController,
-                               didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey: Any]) {
         if let userPickedimage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
             imageView.image = userPickedimage
             guard let ciimage = CIImage(image: userPickedimage) else {
